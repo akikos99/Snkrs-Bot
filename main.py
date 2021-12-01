@@ -653,7 +653,7 @@ if __name__ == "__main__":
         elif "linux" in sys.platform:
             executable_path = "./bin/chromedriver_linux"
         elif "win32" in sys.platform:
-            executable_path = "./bin/chromedriver_win32.exe"
+            executable_path = "./bin/chromedriver.exe"
         else:
             raise Exception("Drivers for installed operating system not found. Try specifying the path to the drivers with the --webdriver-path option")
         driver = webdriver.Chrome(executable_path=executable_path, chrome_options=options)
